@@ -1,0 +1,13 @@
+typescript中获取页面上select下拉框中的值的方法：
+
+<select id="test">
+ <option value="1">VsCode</option>
+  <option value="2">Atorm</option>
+ </select>
+ 
+ <script lang='ts'>
+      var txt=document.querySelector('#test') as HTMLInputElement;
+         var optVal = txt.value;
+        console.log(optVal);
+        
+ </script>
